@@ -171,30 +171,10 @@ function initGame() {
 }
 
 // マップを表示する (02)
-function drawMap() {
-    // noStroke();
-    // for (let r = 0; r < map.length; r++) {
-    //     for (let c = 0; c < map[r].length; c++) {
-    //         if (map[r][c] == 1) {
-    //             fill(0, 0, 180);
-    //             rect(c * CELL_SIZE, r * CELL_SIZE, CELL_SIZE, CELL_SIZE);
-    //         }
-    //     }
-    // }
-}
+function drawMap() {}
 
 // ドットを表示する (03)
-function drawDots() {
-    // fill(255);
-    // noStroke();
-    // for (let r = 0; r < dots.length; r++) {
-    //     for (let c = 0; c < dots[r].length; c++) {
-    //         if (dots[r][c]) {
-    //             circle(cellX(c), cellY(r), 8);
-    //         }
-    //     }
-    // }
-}
+function drawDots() {}
 
 // パックマンを表示する
 function drawPacman() {
@@ -329,38 +309,13 @@ function updateGhosts() {
 }
 
 // ドットを食べる判定 (04)
-function checkEatDots() {
-    // // ピクセル位置からマスの番号を計算する
-    // let c = floor(pacman.x / CELL_SIZE);
-    // let r = floor(pacman.y / CELL_SIZE);
-    // // ワープ中はキャンバス外になるためチェックをスキップする
-    // if (r < 0 || r >= dots.length || c < 0 || c >= dots[r].length) return;
-    // if (dots[r][c]) {
-    //     dots[r][c] = false;
-    //     score += 10;
-    // }
-}
+function checkEatDots() {}
 
 // ゴーストとの当たり判定 (05)
-function checkHitGhost() {
-    // for (let i = 0; i < ghosts.length; i++) {
-    //     let d = dist(pacman.x, pacman.y, ghosts[i].x, ghosts[i].y);
-    //     if (d < CELL_SIZE) {
-    //         mode = 2;
-    //     }
-    // }
-}
+function checkHitGhost() {}
 
 // 全部食べたか確認する (06)
-function checkClear() {
-    // let remaining = 0;
-    // for (let r = 0; r < dots.length; r++) {
-    //     for (let c = 0; c < dots[r].length; c++) {
-    //         if (dots[r][c]) remaining++;
-    //     }
-    // }
-    // if (remaining == 0) mode = 3;
-}
+function checkClear() {}
 
 // スコアを表示する
 function drawScore() {

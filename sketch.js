@@ -176,6 +176,15 @@ function drawMap() {}
 // ドットを表示する (03)
 function drawDots() {}
 
+// ドットを食べる判定 (04)
+function checkEatDots() {}
+
+// ゴーストとの当たり判定 (05)
+function checkHitGhost() {}
+
+// 全部食べたか確認する (06)
+function checkClear() {}
+
 // パックマンを表示する
 function drawPacman() {
     pacman_shape(
@@ -307,15 +316,6 @@ function updateGhosts() {
         else if (g.y > ty) g.y = max(g.y - g.speed, ty);
     }
 }
-
-// ドットを食べる判定 (04)
-function checkEatDots() {}
-
-// ゴーストとの当たり判定 (05)
-function checkHitGhost() {}
-
-// 全部食べたか確認する (06)
-function checkClear() {}
 
 // スコアを表示する
 function drawScore() {
